@@ -1,5 +1,6 @@
 env/
 .vscode/
 
-ssh/id*
 code/
+ssh/
+!ssh/config
