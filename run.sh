@@ -8,4 +8,4 @@ docker run \
     -p 80:80 \
     -v $(pwd)/ssh:/tmp/.ssh \
     -v $(pwd)/code:/code \
-    githubwebhook
+    coryevans2324/githubwebhook
