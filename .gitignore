@@ -1,0 +1,5 @@
+env/
+.vscode/
+
+ssh/id*
+code/
