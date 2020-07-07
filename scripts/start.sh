@@ -16,9 +16,10 @@ if [ ! -d '/code/.git' ];then
             cd /code && git checkout $GIT_BRANCH
             git reset --hard origin/$GIT_BRANCH
         else
+            # default to master branch
             git clone --recursive $GIT_REPO /code/
         fi
-        chown -Rf root:root /code/*
+        chown -Rf $PUID:$PGID /code/*
     else
         echo "GIT_REPO is not defined"
         exit

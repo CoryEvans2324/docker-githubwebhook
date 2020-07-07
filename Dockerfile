@@ -1,7 +1,6 @@
 # Use AlpineLinux as base image
 FROM alpine:3.5
 
-ENV TZ=Pacific/Auckland
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Install Git

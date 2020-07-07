@@ -1,4 +1,5 @@
 #!/bin/bash
 
 cd /code
-git pull origin master
+git pull
+chown -Rf $PUID:$PGID ./*
