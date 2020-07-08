@@ -19,7 +19,7 @@ if [ ! -d '/code/.git' ];then
             # default to master branch
             git clone --recursive $GIT_REPO /code/
         fi
-        chown -Rf $PUID:$PGID /code/*
+        chown -Rf $PUID:$PGID /code
     else
         echo "GIT_REPO is not defined"
         exit
