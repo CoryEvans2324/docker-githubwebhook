@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker create \
-    --name=githubwebhook \
+    --name=git-webhook \
     -e PUID=1000 \
     -e PGID=1000 \
     -e TZ=Pacific/Auckland \
@@ -11,6 +11,6 @@ docker create \
     -p 80:80 \
     -v $(pwd)/ssh:/tmp/.ssh \
     -v $(pwd)/code:/code \
-    coryevans2324/githubwebhook
+    coryevans2324/git-webhook
 
-docker start githubwebhook
+docker start git-webhook
